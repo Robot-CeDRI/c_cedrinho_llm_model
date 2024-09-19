@@ -1,0 +1,41 @@
+{
+  "PRE_PROCESSING": {
+    "HF_BASE_MODEL_ID": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+    "USE_CACHE_MODEL": true,
+    "DATA_SOURCE_SERIALIZER": "user_assistant",
+    "CSV_DATA_SOURCE_SEPARATOR": ";"
+  },
+  "PATHS": {
+    "CSV_DATA_SOURCE_FILE": "DataSource/IPB_data.csv",
+    "CACHE_MODEL_DIR": "../../Models/models--TinyLlama--TinyLlama-1.1B-Chat-v1.0/snapshots/fe8a4ea1ffedaf415f4da2f062534de366a451e6",
+    "RUNNING_DIR": "Runs"
+  },
+  "BITS_AND_BYTES_CONFIG": {
+    "load_in_4bit": true,
+    "bnb_4bit_quant_type": "nf4",
+    "bnb_4bit_compute_dtype": "float16",
+    "bnb_4bit_use_double_quant": true
+  },
+  "LORA_CONFIG": {
+    "r": 8,
+    "lora_alpha": 16,
+    "lora_dropout": 0.05,
+    "bias": "none",
+    "task_type": "CAUSAL_LM"
+  },
+  "SFT_CONFIG": {
+    "per_device_train_batch_size": 16,
+    "gradient_accumulation_steps": 4,
+    "dataset_text_field": "text",
+    "max_seq_length": 1024,
+    "optim": "paged_adamw_32bit",
+    "learning_rate": 2e-4,
+    "lr_scheduler_type": "cosine",
+    "num_train_epochs": 300,
+    "logging_steps": 10,
+    "logging_strategy": "steps",
+    "save_strategy": "no",
+    "fp16": true,
+    "do_eval": true
+  }
+}

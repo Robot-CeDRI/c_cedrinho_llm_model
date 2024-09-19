@@ -1,0 +1,17 @@
+[FineTuning INFO @ 2024-09-17 02:03:28,252]  Logs are being save in Runs/Training_17.09.2024_02.03.28/training_operation.log
+[FineTuning INFO @ 2024-09-17 02:03:28,252]  ---------- VALIDATING PATHS ----------
+[FineTuning INFO @ 2024-09-17 02:03:28,252]  The base model ../../Models/models--TinyLlama--TinyLlama-1.1B-Chat-v1.0/snapshots/fe8a4ea1ffedaf415f4da2f062534de366a451e6/model.safetensors was found!
+[FineTuning INFO @ 2024-09-17 02:03:28,252]  The tokenizer file ../../Models/models--TinyLlama--TinyLlama-1.1B-Chat-v1.0/snapshots/fe8a4ea1ffedaf415f4da2f062534de366a451e6/tokenizer.model was found!
+[FineTuning INFO @ 2024-09-17 02:03:28,253]  ---------- VALIDATING TRAINING DATASET ----------
+[FineTuning INFO @ 2024-09-17 02:03:28,257]  Reading training dataset!
+[FineTuning INFO @ 2024-09-17 02:03:28,259]  Dataset serialized successfully (Serializer:user_assistant)!
+[FineTuning INFO @ 2024-09-17 02:03:28,265]  Saving dataset parquet in the running directory!
+[FineTuning INFO @ 2024-09-17 02:03:28,268]  Dataset dataframe converted to a Dataset object to handle batches in the training!
+[FineTuning INFO @ 2024-09-17 02:03:28,268]  ---------- START TRAINING ----------
+[FineTuning INFO @ 2024-09-17 02:03:28,268]  Fine-Tuning Base Model: TinyLlama/TinyLlama-1.1B-Chat-v1.0
+[FineTuning INFO @ 2024-09-17 02:03:31,218]  Retrieving base model and tokenizer successfully!
+[FineTuning INFO @ 2024-09-17 02:03:33,987]  Training parameters configured successfully!
+[FineTuning INFO @ 2024-09-17 02:43:17,180]  Training finished successfully!
+[FineTuning INFO @ 2024-09-17 02:43:17,842]  Model saved!
+[FineTuning INFO @ 2024-09-17 02:43:17,842]  Getting carbon emission metrics!
+[FineTuning INFO @ 2024-09-17 02:43:18,014]  Metrics saved successfully in Runs/Training_17.09.2024_02.03.28/metrics.png!
